@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, useMediaQuery } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
@@ -28,7 +27,9 @@ const ProfilePage = () => {
     getUser();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  if (!user) return null;
+  if (!user) {
+    return null;
+  }
 
   return (
     <Box>

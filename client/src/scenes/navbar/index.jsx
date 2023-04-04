@@ -40,7 +40,7 @@ const Navbar = () => {
   const primaryLight = theme.palette.primary.light;
   const alt = theme.palette.background.alt;
 
-  // as backend is not linked for the below code. i hard coded in 45th line. after backend is attached remove 45 th line
+  // as backend is not linked for the below code. i hard coded and tested in 45th line. after backend is attached remove 45 th line
   const fullName = `${user.firstName} ${user.lastName}`;
   // const fullName = `Dineshraj`;
 
