@@ -10,18 +10,11 @@ Render deployed site link: [live_site](https://socialmedia-frontend-38xj.onrende
 
 ## Features
 
-- Full featured shopping cart
-- Product reviews and ratings
-- Top products carousel
-- Product pagination
-- User profile with orders
-- Admin product management
-- Admin user management
-- Admin Order details page
-- Mark orders as delivered option
-- Checkout process (shipping, payment method, etc)
-- PayPal / credit card integration
-- Database seeder (products & users)
+- Full featured feed layou
+- Likes and comment section
+- Pop-up Advertisement section
+- User profile
+- Database seeder (posts & users)
 
 ## Usage
 
@@ -40,7 +33,7 @@ Create a .env file in then root and add the following for backend/server
 ```
 
 PORT = 3001
-MONGO_URI = your mongodb uri
+MONGO_URL = your mongodb url
 JWT_SECRET = 'anime123'
 ```
 
@@ -77,11 +70,9 @@ cd frontend
 npm run build
 ```
 
-There is a Render postbuild script, so if you want to push to Render, no need to build manually for deployment to Render
-
 ### Seed Database
 
-You can comment out for one time to seed the database with some sample users and posts. Its detailed as comment in server folder.
+You can comment out for one time to seed the database with some sample users and posts. Its detailed as comment in server/index.js .
 
 ```
 #### Sample User Logins on my deployed site
