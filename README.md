@@ -1,4 +1,4 @@
-# Sociopedia socialmedia Platform
+# Sociopedia- a socialmedia Platform app
 
 > Build a COMPLETE Fullstack Responsive MERN App with Auth, Likes, Dark Mode | React, MongoDB, MUI, Redux
 
