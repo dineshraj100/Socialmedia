@@ -2,9 +2,9 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setPosts } from 'state';
 import PostWidget from './PostWidget';
-import { url } from '../App';
 
 const PostsWidget = ({ userId, isProfile = false }) => {
+  const url = process.env.REACT_APP_BASE_URL;
   const dispatch = useDispatch();
   const posts = useSelector((state) => state.posts);
   const token = useSelector((state) => state.token);

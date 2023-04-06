@@ -5,9 +5,9 @@ import { setFriends } from 'state';
 import FlexBetween from './FlexBetween';
 import UserImage from './UserImage';
 import { useNavigate } from 'react-router-dom';
-import { url } from '../App';
 
 const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
+  const url = process.env.REACT_APP_BASE_URL;
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { _id } = useSelector((state) => state.user);

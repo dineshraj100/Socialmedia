@@ -11,7 +11,6 @@ import WidgetWrapper from 'components/WidgetWrapper';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setPost } from 'state';
-import { url } from '../App';
 
 const PostWidget = ({
   postId,
@@ -24,6 +23,7 @@ const PostWidget = ({
   likes,
   comments,
 }) => {
+  const url = process.env.REACT_APP_BASE_URL;
   const [isComments, setIsComments] = useState(false);
   const dispatch = useDispatch();
   const token = useSelector((state) => state.token);

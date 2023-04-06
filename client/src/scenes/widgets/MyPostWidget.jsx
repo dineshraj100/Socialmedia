@@ -24,9 +24,9 @@ import WidgetWrapper from 'components/WidgetWrapper';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setPosts } from 'state';
-import { url } from '../App';
 
 const MyPostWidget = ({ picturePath }) => {
+  const url = process.env.REACT_APP_BASE_URL;
   const dispatch = useDispatch();
   const [isImage, setIsImage] = useState(false);
   const [image, setImage] = useState(null);

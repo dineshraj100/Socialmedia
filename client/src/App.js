@@ -12,10 +12,6 @@ function App() {
   const mode = useSelector((state) => state.mode);
   const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
   const isAuth = Boolean(useSelector((state) => state.token));
-
-  const url = 'https://socialmedia-backend-beis.onrender.com';
-  //testing url is below and above is the deployed url
-  // const url= 'http://localhost:3001'
   return (
     <div className='app'>
       <BrowserRouter>

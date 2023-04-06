@@ -15,7 +15,6 @@ import { useDispatch } from 'react-redux';
 import { setLogin } from 'state';
 import Dropzone from 'react-dropzone';
 import FlexBetween from 'components/FlexBetween';
-import { url } from '../App';
 
 const registerSchema = yup.object().shape({
   firstName: yup.string().required('required'),
@@ -48,6 +47,7 @@ const initialValuesLogin = {
 };
 
 const Form = () => {
+  const url = process.env.REACT_APP_BASE_URL;
   const [pageType, setPageType] = useState('login');
   const { palette } = useTheme();
   const dispatch = useDispatch();

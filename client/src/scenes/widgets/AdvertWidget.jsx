@@ -1,14 +1,14 @@
 import { Typography, useTheme } from '@mui/material';
 import FlexBetween from 'components/FlexBetween';
 import WidgetWrapper from 'components/WidgetWrapper';
-import { url } from '../App';
 
 const AdvertWidget = () => {
+  const url = process.env.REACT_APP_BASE_URL;
+
   const { palette } = useTheme();
   const dark = palette.neutral.dark;
   const main = palette.neutral.main;
   const medium = palette.neutral.medium;
-
   return (
     <WidgetWrapper>
       <FlexBetween>

@@ -4,9 +4,9 @@ import WidgetWrapper from 'components/WidgetWrapper';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setFriends } from 'state';
-import { url } from '../App';
 
 const FriendListWidget = ({ userId }) => {
+  const url = process.env.REACT_APP_BASE_URL;
   const dispatch = useDispatch();
   const { palette } = useTheme();
   const token = useSelector((state) => state.token);
