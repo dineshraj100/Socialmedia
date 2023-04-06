@@ -47,8 +47,9 @@ REACT_APP_BASE_URL=http://localhost:3000   || replace it with deployed backend u
 ### Install Dependencies (frontend & backend)
 
 ```
+cd server
 npm install
-cd frontend
+cd client
 npm install
 ```
 
