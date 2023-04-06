@@ -6,6 +6,8 @@ As heroku become paid by nov 28 2022, I deployed this site in render. for render
 
 Render deployed site link: [live_site](https://socialmedia-frontend-38xj.onrender.com)
 
+![screenshot](<https://github.com/dineshraj100/Socialmedia/blob/master/client/public/assets/Screenshot%20(159).png>)
+
 ## Features
 
 - Fully featured feed layout like twitter
