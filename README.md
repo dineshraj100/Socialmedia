@@ -10,10 +10,10 @@ Render deployed site link: [live_site](https://socialmedia-frontend-38xj.onrende
 
 ## Features
 
-- Full featured feed layou
-- Likes and comment section
-- Pop-up Advertisement section
-- User profile
+- Fully featured feed layout like twitter
+- Likes and comment section!
+- Pop-up Advertisement section!
+- Separate User profile page on clicking the username
 - Database seeder (posts & users)
 
 ## Usage
